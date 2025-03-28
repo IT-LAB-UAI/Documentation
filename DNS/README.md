@@ -162,4 +162,19 @@ After making the changes, exit configuration mode and (optionally) save the chan
 
  write memory is optional but recommended — it saves your changes so they persist after a reboot
 
+### Adding DNS Entries
+
+Now your service is configured to run on its own.  
+If you want to add custom entries to the `dnsmasq` DNS service, you can do so by editing the `/etc/hosts` file on the machine running the service.  
+By modifying this file, you are creating mappings between IP addresses and hostnames.
+
+> **Reminder:** Always restart the `dnsmasq` service after making changes to the configuration or the `/etc/hosts` file.
+
+There is also an example configuration file included in this directory named `dnsmasq.conf`.  
+This file serves as a reference for how the `/etc/dnsmasq.conf` file on your machine should look.
+
+There will also be an example of the `/etc/hosts` file in this directory,  
+which you can review to see how IPs and hostnames are linked for the DNS server to resolve.
+
+
 
