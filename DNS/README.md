@@ -31,6 +31,29 @@ Also you can check the status of the service by running the following command:
 sudo systemctl status dnsmasq
 ```
 
+### DNS Configuration Overview
+
+Now that the `dnsmasq` service is installed and running, we need to apply two configurations:
+1. **Server-side** – on the machine where the DNS service is hosted.
+2. **Router-side** – to redirect DNS queries from the network to our DNS server.
+
+> **Note:** This setup assumes that an external service is already providing DHCP to the network.  
+Our DNS server will **not** act as a DHCP server — it will solely handle DNS resolution.
+
+#### Server-Side Configuration
+
+On the host machine, we will configure the DNS service to listen on a specific network interface and resolve queries sent to it.
+
+#### Router-Side Configuration
+
+We will update the router’s VLAN settings to specify our DNS server as the default DNS for all clients in the network.  
+
+While it’s technically possible to configure each machine individually to use the DNS server, this approach is inefficient, tedious, and defeats the purpose of having a centralized DNS.  
+Therefore, we will proceed with configuring DNS at the **network level**, directly through the router.
+
+---
+
+
 ### Step 1: Configuring the DNS Service on the Host Machine
 
 With the `dnsmasq` service already running, we now need to configure it properly.  
