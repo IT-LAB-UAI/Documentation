@@ -29,3 +29,74 @@ dnsmasq --version
 Also you can check the status of the service by running the following command: 
 ```bash
 sudo systemctl status dnsmasq
+```
+
+### Step 1: Configuring the DNS Service on the Host Machine
+
+With the `dnsmasq` service already running, we now need to configure it properly.  
+The main configuration file is located at `/etc/dnsmasq.conf`.
+
+Open this file in your preferred text editor and make the following changes:
+
+---
+
+#### 1. Set the Listening Interface
+
+First, specify the network interface(s) on which the DNS service should listen.  
+Uncomment the `interface=` line and set it to your desired interface.  
+In our case, the machine is using `enp2s0`, so the line should look like:
+
+`interface=enp2s0`
+
+---
+
+#### 2. Restrict Listening Addresses
+
+To restrict which addresses the DNS server will respond to, uncomment and edit the `listen-address=` line.
+
+You should include:
+- `127.0.0.1` to allow the local machine to use the DNS
+- The machine’s local IP address (e.g., `192.168.2.2`)
+
+The line should look like this:
+`listen-address=127.0.0.1,192.168.2.2`
+
+This ensures that the DNS service only responds to queries directed at those specific addresses and ignores others.
+
+---
+
+#### 3. Enable Logging for Debugging
+
+To enable query logging for troubleshooting, uncomment the following line:
+
+`log-queries`
+
+Then, specify the log file path by adding:
+`log-facility=/var/log/dnsmasq.log`
+
+
+Make sure this file exists before restarting the service. You can create it using:
+
+```bash
+sudo touch /var/log/dnsmasq.log
+```
+---
+#### 4. Apply the Configuration
+
+After making these changes, save the file and restart the service for the changes to take effect:
+
+```bash
+sudo systemctl restart dnsmasq
+```
+You can verify the status of the service with:
+```bash
+sudo systemctl status dnsmasq
+```
+Additionally, you can monitor the logs for DNS activity using:
+```bash
+cat /var/log/dnsmasq.log
+
+```
+
+
+
