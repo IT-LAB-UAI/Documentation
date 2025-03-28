@@ -95,8 +95,71 @@ sudo systemctl status dnsmasq
 Additionally, you can monitor the logs for DNS activity using:
 ```bash
 cat /var/log/dnsmasq.log
-
 ```
 
+### Step 2: Configuring the Router to Use the DNS Server
+
+To complete the setup, we need to configure the router to direct DNS queries to our new DNS server.  
+This configuration will be done at the **VLAN (DHCP pool)** level, allowing each VLAN to use the same or different DNS servers depending on your needs.
+
+---
+
+#### 1. Connect to the Cisco Router
+
+You must first connect to the Cisco router via console.  
+There is a detailed guide on how to do this in the **CISCO documentation** found in the Documentation repository.
+
+Once connected, you will be greeted with a prompt like:
+`
+Router-1>
+`
+
+> **Note:** The router name may vary depending on your setup. In the Cisco documentation, we named it `Router-1`.
+
+---
+#### 2. Enter Privileged EXEC Mode
+To enter privileged mode, type:
+
+`
+Router-1>enable
+`
+
+You will be prompted to enter the router's secret password. After entering it, you’ll be in EXEC mode.
+
+---
+#### 3. Enter Global Configuration Mode
+
+Once inside, type:
+
+`
+Router-1# configure terminal
+`
+
+---
+#### 4. Modify the DHCP Pool
+Next, you need to access the DHCP pool configuration for the VLAN you want to update. In this example, we are using the pool named SERVICIOS:
+
+`
+Router-1(config)# ip dhcp pool SERVICIOS
+`
+
+---
+#### 5. Set the DNS Server for the DHCP Pool
+Now, update the DNS server addresses. Previously, the DNS servers might have been set to 8.8.8.8 (primary) and 8.8.4.4 (secondary). We will now set our custom DNS server (e.g. 192.168.2.2) as the primary, and retain 8.8.8.8 as the secondary:
+
+`
+Router-1(dhcp-config)# dns-server 192.168.2.2 8.8.8.8
+`
+
+#### 6. Save and Exit
+After making the changes, exit configuration mode and (optionally) save the changes to startup config: 
+
+`Router-1(dhcp-config)#exit`
+
+`Router-1(config)# exit` 
+
+`Router-1# write memory`
+
+ write memory is optional but recommended — it saves your changes so they persist after a reboot
 
 
