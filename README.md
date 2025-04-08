@@ -3,7 +3,7 @@
 This README serves as an index to the documentation for each project carried out in the IT LAB.  
 You can use this file to navigate to the README of each individual project.
 
-# [Cisco](https://github.com/IT-LAB-UAI/Documentation/blob/main/Cisco/README..md)
+# [Cisco](https://github.com/IT-LAB-UAI/Documentation/blob/main/Cisco/README.md)
 
 # [DNS](https://github.com/IT-LAB-UAI/Documentation/blob/main/DNS/README.md)
 
