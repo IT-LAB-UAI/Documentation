@@ -5,4 +5,6 @@ You can use this file to navigate to the README of each individual project.
 
 # [DNS](https://github.com/IT-LAB-UAI/Documentation/blob/main/DNS/README.md)
 
+# [Cisco](https://github.com/IT-LAB-UAI/Documentation/blob/main/Cisco/README..md)
+
 Inside each directory, you will find information specific to that project, as they may vary in type and scope.
