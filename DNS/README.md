@@ -1,4 +1,4 @@
-# DNS 
+# DNS Configuration Guide – IT-LAB-UAI
 In this repository, we describe how the DNS was installed in the IT-LAB of Universidad Adolfo Ibáñez.  
 First, it's important to note that we already have a Cisco router pre-configured, with VLANs and subnets properly defined.  
 Documentation regarding the creation and configuration of the Cisco router can be found at [CISCO]().  
