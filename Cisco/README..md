@@ -1,3 +1,20 @@
+# Cisco Router Configuration Guide – IT-LAB-UAI
+
+Welcome to the official network configuration guide for **IT-LAB-UAI**, the IT laboratory of **Universidad Adolfo Ibáñez**. This document outlines the step-by-step process to configure a **Cisco 2901 router** for a multi-VLAN lab environment using trunking, subinterfaces, DHCP, and NAT.
+
+This setup is designed to support a segmented network with distinct VLANs for management, servers, computers, services, and WiFi — all routed through a single trunk interface for simplicity and scalability.
+
+Whether you're a student setting up your first Cisco lab or an assistant maintaining lab infrastructure, this guide will walk you through:
+
+- Resetting and preparing the router
+- Defining VLANs and DHCP pools
+- Configuring internal and external interfaces
+- Implementing subinterfaces with 802.1Q encapsulation
+- Enabling NAT for internet access across all VLANs
+- Troubleshooting NAT and routing issues
+
+> 💡 **Note:** This guide assumes basic knowledge of Cisco IOS CLI and access to privileged mode on the router.
+
 ## Resetting the Cisco 2901 Router to Factory Defaults
 
 Before starting any configuration, it's important to reset the router to its factory state. This ensures that no previous settings interfere with your new setup.
