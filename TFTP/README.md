@@ -43,6 +43,18 @@ We’re going to stick with most of these defaults but clarify a few things:
     
 -   The `TFTP_OPTIONS="--secure"` setting ensures the server is restricted to the specified directory for security purposes.
 
+### 5. Restart the Service and Verify
+
+After making any changes to the configuration file, it's important to restart the TFTP service to apply them:
+
+```bash
+sudo systemctl restart tftpd-hpa
+```
+Then, check the status to make sure everything is running correctly:
+```bash
+sudo systemctl status tftpd-hpa
+```
+
 ## 📁 What Goes in the TFTP Directory?
 
 You might be wondering — what kind of files go in the TFTP directory?
