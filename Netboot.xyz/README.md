@@ -140,6 +140,6 @@ This file is ready to use out of the box and can be served by your TFTP server t
 
 ## 📚  PXE Boot Project
 
-To understand the full PXE setup, including how all components interact — such as DHCP, TFTP, iPXE, and netboot.xyz — check out the [PXE documentation](#pxe-documentation).
+To understand the full PXE setup, including how all components interact — such as DHCP, TFTP, iPXE, and netboot.xyz — check out the [PXE documentation](https://github.com/IT-LAB-UAI/Documentation/blob/main/PXE/README.md).
 
 There, you’ll find a detailed, step-by-step breakdown of the entire PXE boot process and the system architecture behind it. It’s a great resource for seeing how everything works together to enable PXE booting in the LAB environment.
