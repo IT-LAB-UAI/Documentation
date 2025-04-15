@@ -47,6 +47,4 @@ We’re going to stick with most of these defaults but clarify a few things:
 
 You might be wondering — what kind of files go in the TFTP directory?
 
-Basically, any file placed here can be transferred over the network via TFTP. In our case, we’ll use this server to serve PXE boot files. That means in a later phase of the project, we’ll configure PXE to allow mass network booting of machines inside the LAB.
-
-But that’s the work for another project — this setup lays the foundation for it.
+Basically, any file placed here can be transferred over the network via TFTP. In our case, we’ll use this server to serve PXE boot files. But that’s the work for another project — this setup lays the foundation for it.
