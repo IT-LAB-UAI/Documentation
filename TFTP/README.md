@@ -60,3 +60,9 @@ sudo systemctl status tftpd-hpa
 You might be wondering — what kind of files go in the TFTP directory?
 
 Basically, any file placed here can be transferred over the network via TFTP. In our case, we’ll use this server to serve PXE boot files. But that’s the work for another project — this setup lays the foundation for it.
+
+## 📚  PXE Boot Project
+
+To understand the full PXE setup, including how all components interact — such as DHCP, TFTP, iPXE, and netboot.xyz — check out the [PXE documentation](https://github.com/IT-LAB-UAI/Documentation/blob/main/PXE/README.md).
+
+There, you’ll find a detailed, step-by-step breakdown of the entire PXE boot process and the system architecture behind it. It’s a great resource for seeing how everything works together to enable PXE booting in the LAB environment.
