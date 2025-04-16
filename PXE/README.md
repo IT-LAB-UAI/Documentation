@@ -1,6 +1,12 @@
-## 📚 Table of Contents
 
-- [🧩 PXE Boot System](#-pxe-boot-system)
+
+# 🧩 PXE Boot System 
+
+This is the documentation of the PXE (Preboot Execution Environment) project implemented for the **IT-LAB-UAI**. The goal of this setup is to boot and provision machines in the lab automatically with a default configuration — making the setup and initialization process fully automated and consistent across devices.
+
+PXE enables machines to boot over the network without requiring local storage, ideal for mass deployment and rapid reconfiguration.
+
+## 📚 Table of Contents
 - [🧱 Prerequisites](#-prerequisites)
 - [📝 What This Guide Covers](#-what-this-guide-covers)
 - [🖥️ System Architecture](#️-system-architecture)
@@ -20,12 +26,6 @@
   - [⚙️ BIOS/UEFI Settings](#️-biosuefi-settings)
   - [⌨️ Booting into PXE](#️-booting-into-pxe)
   - [📥 Installing Debian via Preseed](#-installing-debian-via-preseed)
-
-# 🧩 PXE Boot System 
-
-This is the documentation of the PXE (Preboot Execution Environment) project implemented for the **IT-LAB-UAI**. The goal of this setup is to boot and provision machines in the lab automatically with a default configuration — making the setup and initialization process fully automated and consistent across devices.
-
-PXE enables machines to boot over the network without requiring local storage, ideal for mass deployment and rapid reconfiguration.
 
 
 ## 🧱 Prerequisites
