@@ -10,7 +10,7 @@ What we will describe below is how the DNS was installed and set up according to
 - [📦 Installation](#-installation)
 - [🔍 Verifying the Installation](#-verifying-the-installation)
 - [📖 DNS Configuration Overview](#-dns-configuration-overview)
-  - [🖥️ Server-Side Configuration](#-server-side-configuration)
+  - [🧮 Server-Side Configuration](#-server-side-configuration)
   - [📡 Router-Side Configuration](#-router-side-configuration)
 - [🧑‍💻 Step 1: Configuring the DNS Service on the Host Machine](#-step-1-configuring-the-dns-service-on-the-host-machine)
   - [🔌 1. Set the Listening Interface](#-1-set-the-listening-interface)
@@ -63,7 +63,7 @@ Now that the `dnsmasq` service is installed and running, we need to apply two co
 > **Note:** This setup assumes that an external service is already providing DHCP to the network.  
 Our DNS server will **not** act as a DHCP server — it will solely handle DNS resolution.
 
-#### 🖥️ Server-Side Configuration
+#### 🧮 Server-Side Configuration
 
 On the host machine, we will configure the DNS service to listen on a specific network interface and resolve queries sent to it.
 
