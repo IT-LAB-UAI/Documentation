@@ -43,11 +43,11 @@ Whether you're a student setting up your first Cisco lab or an assistant maintai
 
 
 
-## ♻️Resetting the Cisco 2901 Router to Factory Defaults
+## ♻️ Resetting the Cisco 2901 Router to Factory Defaults
 
 Before starting any configuration, it's important to reset the router to its factory state. This ensures that no previous settings interfere with your new setup.
 
-### 🔄Steps to Erase the Current Configuration:
+### 🔄 Steps to Erase the Current Configuration:
 
 1. Enter privileged EXEC mode:
    ```shell
@@ -73,7 +73,7 @@ Before starting any configuration, it's important to reset the router to its fac
 
 > 💡**Note:** If the router has an enable password and you do not know it, consult Cisco's official documentation to perform a password recovery or manual factory reset.
 
-## ⏭️Skipping Initial Configuration Dialog
+## ⏭️ Skipping Initial Configuration Dialog
 
 After the router reloads, you'll be prompted with the following message:
 
@@ -93,7 +93,7 @@ Then you'll be taken to the router prompt:
 Press RETURN to get started!
 Router>
 ```
-## 📡Disabling Automatic TFTP Configuration Fetch
+## 📡 Disabling Automatic TFTP Configuration Fetch
 
 After resetting the router, you might notice that it attempts to fetch a configuration file from a TFTP server. This happens because we erased the startup configuration, and by default, the router tries to retrieve a config from the network.
 
@@ -111,7 +111,7 @@ This command stops the router from trying to auto-load configuration files from 
 
 
 
-## 🧩Lab VLAN Setup
+## 🧩 Lab VLAN Setup
 
 For our lab environment, we will be using 5 VLANs, each assigned to a specific subnet:
 
@@ -124,11 +124,11 @@ For our lab environment, we will be using 5 VLANs, each assigned to a specific s
 | WiFi        | 192.168.5.0/24 | 5       |
 
 
-## 📝Defining VLANs and DHCP Pools
+## 📝 Defining VLANs and DHCP Pools
 
 Before configuring the subinterfaces, we must define each VLAN and assign a DHCP pool so that connected devices receive IP addresses automatically.
 
-### 📋General VLAN DHCP Configuration Format:
+### 📋 General VLAN DHCP Configuration Format:
 
 ```shell
 enable
@@ -142,7 +142,7 @@ ip dhcp pool <VLAN_Name>
 
 We are using **Google's DNS (8.8.8.8)** as the default. This can be changed later if a local DNS server is configured.
 
-### 💡Example - Server VLAN:
+### 💡 Example - Server VLAN:
 
 ```shell
 ip dhcp pool Server
@@ -151,7 +151,7 @@ ip dhcp pool Server
  dns-server 8.8.8.8
 ```
 
-### 📦DHCP Pool Configuration for All VLANs:
+### 📦 DHCP Pool Configuration for All VLANs:
 
 ```shell
 ip dhcp pool Management
@@ -183,11 +183,11 @@ ip dhcp pool Wifi
 Once all VLANs are defined and DHCP is set, you can proceed with configuring the trunk and subinterfaces as shown in the previous step.
 
 
-## 🔌Configuring Interfaces: External (DHCP) and Internal (Trunk)
+## 🔌 Configuring Interfaces: External (DHCP) and Internal (Trunk)
 
 After setting up the VLANs and DHCP pools, we now configure the physical interfaces of the router.
 
-### 🌐External Interface (`GigabitEthernet0/0`)
+### 🌐 External Interface (`GigabitEthernet0/0`)
 
 This is the **uplink** interface that connects to the outside network (e.g. the university network). It will obtain its IP address via DHCP and is marked as the **NAT outside** interface.
 
@@ -206,7 +206,7 @@ This interface will be used for NAT and external communication.
 
 ---
 
-### 🎛️Internal Trunk Interface (`GigabitEthernet0/1`)
+### 🎛️ Internal Trunk Interface (`GigabitEthernet0/1`)
 
 This interface connects to the switch and will carry all VLAN traffic using subinterfaces. We designate this as the **internal trunk** interface where all VLANs will converge.
 
@@ -224,11 +224,11 @@ interface GigabitEthernet0/1
 > 💡 We chose this approach to keep cable management simple and efficient. If desired, you could assign each VLAN to a different physical interface, but this adds complexity and usually doesn’t provide a performance benefit for most lab setups.
 
 
-## 🧱Configuring Subinterfaces for Each VLAN
+## 🧱 Configuring Subinterfaces for Each VLAN
 
 Now that the DHCP pools, VLANs, and both the internal (`GigabitEthernet0/1`) and external (`GigabitEthernet0/0`) interfaces are set up, we need to create **subinterfaces** on the internal trunk port. Each subinterface will be mapped to a specific VLAN and will act as the **default gateway** for that VLAN.
 
-### ❓Why Do We Use 802.1Q Encapsulation?
+### ❓ Why Do We Use 802.1Q Encapsulation?
 
 We use **802.1Q (Dot1Q)** encapsulation to allow multiple VLANs to be carried over a single physical link (the trunk). This tagging standard allows Ethernet frames to carry VLAN identification information. On subinterfaces, we use:
 
@@ -241,7 +241,7 @@ encapsulation dot1Q <vlan-id> [native]
 
 ---
 
-### 📐Subinterface Configuration Template
+### 📐 Subinterface Configuration Template
 
 Each subinterface follows this pattern:
 
@@ -258,7 +258,7 @@ interface GigabitEthernet0/1.<VLAN_ID>
 
 ---
 
-### 🧪Example - VLAN 1 (Management)
+### 🧪 Example - VLAN 1 (Management)
 
 ```shell
 interface GigabitEthernet0/1.1
@@ -271,7 +271,7 @@ interface GigabitEthernet0/1.1
 
 ---
 
-### 🧬Subinterface Configuration for All VLANs
+### 🧬 Subinterface Configuration for All VLANs
 
 ```shell
 interface GigabitEthernet0/1.1
