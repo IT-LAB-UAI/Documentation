@@ -5,7 +5,7 @@ You can use this file to navigate to the README of each individual project.
 
 # [Cisco](https://github.com/IT-LAB-UAI/Documentation/blob/main/Cisco/README.md)
 <details>
-<summary>📚 Expand Table of Contents</summary>
+<summary>📚 Table of Contents</summary>
 
 ### 📚 Cisco Router Configuration – Table of Contents
 - [🔄 Resetting the Cisco 2901 Router to Factory Defaults](https://github.com/IT-LAB-UAI/Documentation/blob/main/Cisco/README.md#-resetting-the-cisco-2901-router-to-factory-defaults)
@@ -31,7 +31,7 @@ You can use this file to navigate to the README of each individual project.
 
 # [DNS](https://github.com/IT-LAB-UAI/Documentation/blob/main/DNS/README.md)
 <details>
-<summary>📚 Expand Table of Contents</summary>
+<summary>📚 Table of Contents</summary>
 
 ### 📚 DNS Configuration – Table of Contents
 - [🧰 Prerequisites](https://github.com/IT-LAB-UAI/Documentation/blob/main/DNS/README.md#-prerequisites)
@@ -62,7 +62,7 @@ You can use this file to navigate to the README of each individual project.
 
 # [NETBOOT.XYZ](https://github.com/IT-LAB-UAI/Documentation/blob/main/Netboot.xyz/README.md)
 <details>
-<summary>📚 Expand Table of Contents</summary>
+<summary>📚 Table of Contents</summary>
   
 ### Table of Contents
 - [🧰 Install and Setup](https://github.com/IT-LAB-UAI/Documentation/blob/main/Netboot.xyz/README.md#-install-and-setup)
@@ -78,7 +78,7 @@ You can use this file to navigate to the README of each individual project.
 
 # [TFTP](https://github.com/IT-LAB-UAI/Documentation/blob/main/TFTP/README.md)
 <details>
-<summary>📄 Click to expand TFTP Server Documentation TOC</summary>
+<summary> 📚Table of Contents</summary>
 
 ### Table of Contents
 
@@ -97,7 +97,7 @@ You can use this file to navigate to the README of each individual project.
 
 # [PXE](https://github.com/IT-LAB-UAI/Documentation/blob/main/PXE/README.md)
 <details>
-<summary>📚 Expand Table of Contents</summary>
+<summary>📚 Table of Contents</summary>
   
 ### 📚 PXE Boot System Documentation – Table of Contents
 - [🧩 PXE Boot System](https://github.com/IT-LAB-UAI/Documentation/blob/main/PXE/README.md#-pxe-boot-system)
