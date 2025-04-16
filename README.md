@@ -14,7 +14,7 @@ You can use this file to navigate to the README of each individual project.
 # [TFTP](https://github.com/IT-LAB-UAI/Documentation/blob/main/TFTP/README.md)
 
 # [PXE](https://github.com/IT-LAB-UAI/Documentation/blob/main/PXE/README.md)
-## 📚 PXE Boot System Documentation – Table of Contents
+### 📚 PXE Boot System Documentation – Table of Contents
 
 - [🧩 PXE Boot System](https://github.com/IT-LAB-UAI/Documentation/blob/main/PXE/README.md#-pxe-boot-system)
 - [🧱 Prerequisites](https://github.com/IT-LAB-UAI/Documentation/blob/main/PXE/README.md#-prerequisites)
@@ -36,6 +36,6 @@ You can use this file to navigate to the README of each individual project.
   - [⚙️ BIOS/UEFI Settings](https://github.com/IT-LAB-UAI/Documentation/blob/main/PXE/README.md#️-biosuefi-settings)
   - [⌨️ Booting into PXE](https://github.com/IT-LAB-UAI/Documentation/blob/main/PXE/README.md#️-booting-into-pxe)
   - [📥 Installing Debian via Preseed](https://github.com/IT-LAB-UAI/Documentation/blob/main/PXE/README.md#-installing-debian-via-preseed)
-
+---
 
 Inside each directory, you will find information specific to that project, as they may vary in type and scope.
