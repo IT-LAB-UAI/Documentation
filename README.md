@@ -5,7 +5,7 @@ You can use this file to navigate to the README of each individual project.
 
 # [Cisco](https://github.com/IT-LAB-UAI/Documentation/blob/main/Cisco/README.md)
 <details>
-<summary>📚 Table of Contents</summary>
+<summary>📚 Cisco Table of Contents</summary>
 
 ### 📚 Cisco Router Configuration – Table of Contents
 - [🔄 Resetting the Cisco 2901 Router to Factory Defaults](https://github.com/IT-LAB-UAI/Documentation/blob/main/Cisco/README.md#-resetting-the-cisco-2901-router-to-factory-defaults)
@@ -31,7 +31,7 @@ You can use this file to navigate to the README of each individual project.
 
 # [DNS](https://github.com/IT-LAB-UAI/Documentation/blob/main/DNS/README.md)
 <details>
-<summary>📚 Table of Contents</summary>
+<summary>📚 DNS Table of Contents</summary>
 
 ### 📚 DNS Configuration – Table of Contents
 - [🧰 Prerequisites](https://github.com/IT-LAB-UAI/Documentation/blob/main/DNS/README.md#-prerequisites)
@@ -58,11 +58,21 @@ You can use this file to navigate to the README of each individual project.
 
 
 # [LAB-Control](https://github.com/IT-LAB-UAI/LAB-Control/blob/develop/README.md)
+<summary>📚 LAB-Control Table of Contents</summary>
 
+### Table of Contents
+
+- [🧰 Configuration and Deployment](https://github.com/IT-LAB-UAI/LAB-Control/edit/develop/README.md#-configuration-and-deployment)
+  - [🧪 1. Config `.env` File (Testing/Development)](https://github.com/IT-LAB-UAI/LAB-Control/edit/develop/README.md#-1-config-env-file-located-in-the-config-directory-for-testingdevelop)
+  - [🌍 2. Root `.env` File (Docker Compose)](https://github.com/IT-LAB-UAI/LAB-Control/edit/develop/README.md#-2-root-env-file-located-in-the-root-directory-of-the-project)
+- [📦 Project Structure](https://github.com/IT-LAB-UAI/LAB-Control/edit/develop/README.md#-project-structure)
+- [📁 Project Structure (Definition)](https://github.com/IT-LAB-UAI/LAB-Control/edit/develop/README.md#-project-structure-definition)
+
+</details>
 
 # [NETBOOT.XYZ](https://github.com/IT-LAB-UAI/Documentation/blob/main/Netboot.xyz/README.md)
 <details>
-<summary>📚 Table of Contents</summary>
+<summary>📚 NETBOOT.XYZ Table of Contents</summary>
   
 ### Table of Contents
 - [🧰 Install and Setup](https://github.com/IT-LAB-UAI/Documentation/blob/main/Netboot.xyz/README.md#-install-and-setup)
@@ -78,7 +88,7 @@ You can use this file to navigate to the README of each individual project.
 
 # [TFTP](https://github.com/IT-LAB-UAI/Documentation/blob/main/TFTP/README.md)
 <details>
-<summary> 📚Table of Contents</summary>
+<summary> 📚 TFTP Table of Contents</summary>
 
 ### Table of Contents
 
@@ -97,7 +107,7 @@ You can use this file to navigate to the README of each individual project.
 
 # [PXE](https://github.com/IT-LAB-UAI/Documentation/blob/main/PXE/README.md)
 <details>
-<summary>📚 Table of Contents</summary>
+<summary>📚 PXE Table of Contents</summary>
   
 ### 📚 PXE Boot System Documentation – Table of Contents
 - [🧩 PXE Boot System](https://github.com/IT-LAB-UAI/Documentation/blob/main/PXE/README.md#-pxe-boot-system)
