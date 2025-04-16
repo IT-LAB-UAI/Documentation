@@ -5,7 +5,7 @@ You can use this file to navigate to the README of each individual project.
 
 # [Cisco](https://github.com/IT-LAB-UAI/Documentation/blob/main/Cisco/README.md)
 <details>
-<summary>📚 Cisco Table of Contents</summary>
+<summary>📚 Click to Expand Cisco Table of Contents</summary>
 
 ### 📚 Cisco Router Configuration – Table of Contents
 - [🔄 Resetting the Cisco 2901 Router to Factory Defaults](https://github.com/IT-LAB-UAI/Documentation/blob/main/Cisco/README.md#-resetting-the-cisco-2901-router-to-factory-defaults)
