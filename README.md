@@ -77,6 +77,23 @@ You can use this file to navigate to the README of each individual project.
 </details>
 
 # [TFTP](https://github.com/IT-LAB-UAI/Documentation/blob/main/TFTP/README.md)
+<details>
+<summary>📄 Click to expand TFTP Server Documentation TOC</summary>
+
+### Table of Contents
+
+- [🧰 Installation and Setup](https://github.com/IT-LAB-UAI/Documentation/blob/main/TFTP/README.md#-installation-and-setup)
+  - [🔄 1. Update the System](https://github.com/IT-LAB-UAI/Documentation/blob/main/TFTP/README.md#1-update-the-system)
+  - [📦 2. Install the TFTP Server Package](https://github.com/IT-LAB-UAI/Documentation/blob/main/TFTP/README.md#2-install-the-tftp-server-package)
+  - [📡 3. Check the TFTP Service Status](https://github.com/IT-LAB-UAI/Documentation/blob/main/TFTP/README.md#3-check-the-tftp-service-status)
+  - [🛠️ 4. Configure the TFTP Server](https://github.com/IT-LAB-UAI/Documentation/blob/main/TFTP/README.md#4-configure-the-tftp-server)
+  - [✅ 5. Restart the Service and Verify](https://github.com/IT-LAB-UAI/Documentation/blob/main/TFTP/README.md#5-restart-the-service-and-verify)
+- [📁 What Goes in the TFTP Directory?](https://github.com/IT-LAB-UAI/Documentation/blob/main/TFTP/README.md#-what-goes-in-the-tftp-directory)
+- [📚 PXE Boot Project](https://github.com/IT-LAB-UAI/Documentation/blob/main/TFTP/README.md#--pxe-boot-project)
+
+</details>
+
+
 
 # [PXE](https://github.com/IT-LAB-UAI/Documentation/blob/main/PXE/README.md)
 <details>
