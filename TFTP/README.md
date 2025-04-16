@@ -13,7 +13,7 @@ This documentation provides a quick installation guide for the TFTP server using
   - [🛠️ 4. Configure the TFTP Server](#4-configure-the-tftp-server)
   - [✅ 5. Restart the Service and Verify](#5-restart-the-service-and-verify)
 - [📁 What Goes in the TFTP Directory?](#-what-goes-in-the-tftp-directory)
-- [📚 PXE Boot Project](#-pxe-boot-project)
+- [📚 PXE Boot Project](#--pxe-boot-project)
 
 ## 🧰 Installation and Setup
 
