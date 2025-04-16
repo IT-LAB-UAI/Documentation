@@ -44,7 +44,7 @@ Whether you're a student setting up your first Cisco lab or an assistant maintai
 
 
 
-## ♻️ Resetting the Cisco 2901 Router to Factory Defaults
+## 🧹 Resetting the Cisco 2901 Router to Factory Defaults
 
 Before starting any configuration, it's important to reset the router to its factory state. This ensures that no previous settings interfere with your new setup.
 
@@ -74,7 +74,7 @@ Before starting any configuration, it's important to reset the router to its fac
 
 > 💡**Note:** If the router has an enable password and you do not know it, consult Cisco's official documentation to perform a password recovery or manual factory reset.
 
-## ⏭️ Skipping Initial Configuration Dialog
+## ⏩ Skipping Initial Configuration Dialog
 
 After the router reloads, you'll be prompted with the following message:
 
@@ -207,7 +207,7 @@ This interface will be used for NAT and external communication.
 
 ---
 
-### 🎛️ Internal Trunk Interface (`GigabitEthernet0/1`)
+### 🖧 Internal Trunk Interface (`GigabitEthernet0/1`)
 
 This interface connects to the switch and will carry all VLAN traffic using subinterfaces. We designate this as the **internal trunk** interface where all VLANs will converge.
 
