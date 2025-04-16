@@ -58,6 +58,7 @@ You can use this file to navigate to the README of each individual project.
 
 
 # [LAB-Control](https://github.com/IT-LAB-UAI/LAB-Control/blob/develop/README.md)
+<details>
 <summary>📚 LAB-Control Table of Contents</summary>
 
 ### Table of Contents
