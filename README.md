@@ -4,6 +4,9 @@ This README serves as an index to the documentation for each project carried out
 You can use this file to navigate to the README of each individual project.
 
 # [Cisco](https://github.com/IT-LAB-UAI/Documentation/blob/main/Cisco/README.md)
+<details>
+<summary>📚 Click to expand Table of Contents</summary>
+
 ### 📚 Cisco Router Configuration – Table of Contents
 - [🔄 Resetting the Cisco 2901 Router to Factory Defaults](https://github.com/IT-LAB-UAI/Documentation/blob/main/Cisco/README.md#-resetting-the-cisco-2901-router-to-factory-defaults)
   - [🔧 Steps to Erase the Current Configuration](https://github.com/IT-LAB-UAI/Documentation/blob/main/Cisco/README.md#-steps-to-erase-the-current-configuration)
@@ -24,7 +27,12 @@ You can use this file to navigate to the README of each individual project.
   - [🧪 Example - VLAN 1 (Management)](https://github.com/IT-LAB-UAI/Documentation/blob/main/Cisco/README.md#-example---vlan-1-management)
   - [🧬 Subinterface Configuration for All VLANs](https://github.com/IT-LAB-UAI/Documentation/blob/main/Cisco/README.md#-subinterface-configuration-for-all-vlans)
 
+</details>
+
 # [DNS](https://github.com/IT-LAB-UAI/Documentation/blob/main/DNS/README.md)
+<details>
+<summary>📚 Click to expand Table of Contents</summary>
+
 ### 📚 DNS Configuration – Table of Contents
 - [🧰 Prerequisites](https://github.com/IT-LAB-UAI/Documentation/blob/main/DNS/README.md#-prerequisites)
 - [📦 Installation](https://github.com/IT-LAB-UAI/Documentation/blob/main/DNS/README.md#-installation)
@@ -46,11 +54,15 @@ You can use this file to navigate to the README of each individual project.
   - [💾 6. Save and Exit](https://github.com/IT-LAB-UAI/Documentation/blob/main/DNS/README.md#-6-save-and-exit)
 - [📝 Adding DNS Entries](https://github.com/IT-LAB-UAI/Documentation/blob/main/DNS/README.md#-adding-dns-entries)
 
+</details>
+
+
 # [LAB-Control](https://github.com/IT-LAB-UAI/LAB-Control/blob/develop/README.md)
+
 
 # [NETBOOT.XYZ](https://github.com/IT-LAB-UAI/Documentation/blob/main/Netboot.xyz/README.md)
 <details>
-<summary>📚 Click to expand Table of Contents</summary>
+<summary>📚 Expand Table of Contents</summary>
   
 ### Table of Contents
 - [🧰 Install and Setup](https://github.com/IT-LAB-UAI/Documentation/blob/main/Netboot.xyz/README.md#-install-and-setup)
@@ -67,6 +79,9 @@ You can use this file to navigate to the README of each individual project.
 # [TFTP](https://github.com/IT-LAB-UAI/Documentation/blob/main/TFTP/README.md)
 
 # [PXE](https://github.com/IT-LAB-UAI/Documentation/blob/main/PXE/README.md)
+<details>
+<summary>📚 Expand Table of Contents</summary>
+  
 ### 📚 PXE Boot System Documentation – Table of Contents
 - [🧩 PXE Boot System](https://github.com/IT-LAB-UAI/Documentation/blob/main/PXE/README.md#-pxe-boot-system)
 - [🧱 Prerequisites](https://github.com/IT-LAB-UAI/Documentation/blob/main/PXE/README.md#-prerequisites)
@@ -88,6 +103,9 @@ You can use this file to navigate to the README of each individual project.
   - [⚙️ BIOS/UEFI Settings](https://github.com/IT-LAB-UAI/Documentation/blob/main/PXE/README.md#️-biosuefi-settings)
   - [⌨️ Booting into PXE](https://github.com/IT-LAB-UAI/Documentation/blob/main/PXE/README.md#️-booting-into-pxe)
   - [📥 Installing Debian via Preseed](https://github.com/IT-LAB-UAI/Documentation/blob/main/PXE/README.md#-installing-debian-via-preseed)
+
+</details>
+
 ---
 
 Inside each directory, you will find information specific to that project, as they may vary in type and scope.
