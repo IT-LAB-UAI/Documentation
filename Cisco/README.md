@@ -19,7 +19,7 @@ Whether you're a student setting up your first Cisco lab or an assistant maintai
 
 - [🛠️ Cisco Router Configuration Guide – IT-LAB-UAI](#️-cisco-router-configuration-guide--it-lab-uai)
 - [♻️ Resetting the Cisco 2901 Router to Factory Defaults](#️-resetting-the-cisco-2901-router-to-factory-defaults)
-  - [🔄 Steps to Erase the Current Configuration](#-steps-to-erase-the-current-configuration)
+  - [🔄 Steps to Erase the Current Configuration](#steps-to-erase-the-current-configuration)
 - [⏭️ Skipping Initial Configuration Dialog](#️-skipping-initial-configuration-dialog)
 - [📡 Disabling Automatic TFTP Configuration Fetch](#-disabling-automatic-tftp-configuration-fetch)
   - [🔧 Disable TFTP Configuration Fetch](#-disable-tftp-configuration-fetch)
