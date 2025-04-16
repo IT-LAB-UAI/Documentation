@@ -15,27 +15,31 @@ Whether you're a student setting up your first Cisco lab or an assistant maintai
 
 > 💡 **Note:** This guide assumes basic knowledge of Cisco IOS CLI and access to privileged mode on the router.
 
+
 ## 📚 Table of Contents
 
-- [🛠️ Cisco Router Configuration Guide – IT-LAB-UAI](#️-cisco-router-configuration-guide--it-lab-uai)
-- [♻️ Resetting the Cisco 2901 Router to Factory Defaults](#️-resetting-the-cisco-2901-router-to-factory-defaults)
+- [🛠️ Cisco Router Configuration Guide – IT-LAB-UAI](#cisco-router-configuration-guide--it-lab-uai)
+- [♻️ Resetting the Cisco 2901 Router to Factory Defaults](#resetting-the-cisco-2901-router-to-factory-defaults)
   - [🔄 Steps to Erase the Current Configuration](#steps-to-erase-the-current-configuration)
-- [⏭️ Skipping Initial Configuration Dialog](#️-skipping-initial-configuration-dialog)
-- [📡 Disabling Automatic TFTP Configuration Fetch](#-disabling-automatic-tftp-configuration-fetch)
-  - [🔧 Disable TFTP Configuration Fetch](#-disable-tftp-configuration-fetch)
-- [🧩 Lab VLAN Setup](#-lab-vlan-setup)
-- [📝 Defining VLANs and DHCP Pools](#-defining-vlans-and-dhcp-pools)
-  - [📋 General VLAN DHCP Configuration Format](#-general-vlan-dhcp-configuration-format)
-  - [💡 Example - Server VLAN](#-example---server-vlan)
-  - [📦 DHCP Pool Configuration for All VLANs](#-dhcp-pool-configuration-for-all-vlans)
-- [🔌 Configuring Interfaces: External (DHCP) and Internal (Trunk)](#-configuring-interfaces-external-dhcp-and-internal-trunk)
-  - [🌐 External Interface (`GigabitEthernet0/0`)](#-external-interface-gigabitethernet00)
-  - [🎛️ Internal Trunk Interface (`GigabitEthernet0/1`)](#-internal-trunk-interface-gigabitethernet01)
-- [🧱 Configuring Subinterfaces for Each VLAN](#-configuring-subinterfaces-for-each-vlan)
-  - [❓ Why Do We Use 802.1Q Encapsulation?](#-why-do-we-use-8021q-encapsulation)
-  - [📐 Subinterface Configuration Template](#-subinterface-configuration-template)
-  - [🧪 Example - VLAN 1 (Management)](#-example---vlan-1-management)
-  - [🧬 Subinterface Configuration for All VLANs](#-subinterface-configuration-for-all-vlans)
+- [⏭️ Skipping Initial Configuration Dialog](#skipping-initial-configuration-dialog)
+- [📡 Disabling Automatic TFTP Configuration Fetch](#disabling-automatic-tftp-configuration-fetch)
+  - [🔧 Disable TFTP Configuration Fetch](#disable-tftp-configuration-fetch)
+- [🧩 Lab VLAN Setup](#lab-vlan-setup)
+- [📝 Defining VLANs and DHCP Pools](#defining-vlans-and-dhcp-pools)
+  - [📋 General VLAN DHCP Configuration Format](#general-vlan-dhcp-configuration-format)
+  - [💡 Example - Server VLAN](#example---server-vlan)
+  - [📦 DHCP Pool Configuration for All VLANs](#dhcp-pool-configuration-for-all-vlans)
+- [🔌 Configuring Interfaces: External (DHCP) and Internal (Trunk)](#configuring-interfaces-external-dhcp-and-internal-trunk)
+  - [🌐 External Interface (`GigabitEthernet0/0`)](#external-interface-gigabitethernet00)
+  - [🎛️ Internal Trunk Interface (`GigabitEthernet0/1`)](#internal-trunk-interface-gigabitethernet01)
+- [🧱 Configuring Subinterfaces for Each VLAN](#configuring-subinterfaces-for-each-vlan)
+  - [❓ Why Do We Use 802.1Q Encapsulation?](#why-do-we-use-8021q-encapsulation)
+  - [📐 Subinterface Configuration Template](#subinterface-configuration-template)
+  - [🧪 Example - VLAN 1 (Management)](#example---vlan-1-management)
+  - [🧬 Subinterface Configuration for All VLANs](#subinterface-configuration-for-all-vlans)
+
+
+
 
 
 
