@@ -31,7 +31,7 @@ You can use this file to navigate to the README of each individual project.
 
 # [DNS](https://github.com/IT-LAB-UAI/Documentation/blob/main/DNS/README.md)
 <details>
-<summary>📚 DNS Table of Contents</summary>
+<summary>📚 DNS Table of Contents [Click to Expand]</summary>
 
 ### 📚 DNS Configuration – Table of Contents
 - [🧰 Prerequisites](https://github.com/IT-LAB-UAI/Documentation/blob/main/DNS/README.md#-prerequisites)
@@ -59,7 +59,7 @@ You can use this file to navigate to the README of each individual project.
 
 # [LAB-Control](https://github.com/IT-LAB-UAI/LAB-Control/blob/develop/README.md)
 <details>
-<summary>📚 LAB-Control Table of Contents</summary>
+<summary>📚 LAB-Control Table of Contents [Click to Expand]</summary>
 
 ### Table of Contents
 
@@ -74,7 +74,7 @@ You can use this file to navigate to the README of each individual project.
 
 # [NETBOOT.XYZ](https://github.com/IT-LAB-UAI/Documentation/blob/main/Netboot.xyz/README.md)
 <details>
-<summary>📚 NETBOOT.XYZ Table of Contents</summary>
+<summary>📚 NETBOOT.XYZ Table of Contents [Click to Expand]</summary>
   
 ### Table of Contents
 - [🧰 Install and Setup](https://github.com/IT-LAB-UAI/Documentation/blob/main/Netboot.xyz/README.md#-install-and-setup)
@@ -90,7 +90,7 @@ You can use this file to navigate to the README of each individual project.
 
 # [TFTP](https://github.com/IT-LAB-UAI/Documentation/blob/main/TFTP/README.md)
 <details>
-<summary> 📚 TFTP Table of Contents</summary>
+<summary> 📚 TFTP Table of Contents [Click to Expand]</summary>
 
 ### Table of Contents
 
@@ -109,7 +109,7 @@ You can use this file to navigate to the README of each individual project.
 
 # [PXE](https://github.com/IT-LAB-UAI/Documentation/blob/main/PXE/README.md)
 <details>
-<summary>📚 PXE Table of Contents</summary>
+<summary>📚 PXE Table of Contents [Click to Expand]</summary>
   
 ### 📚 PXE Boot System Documentation – Table of Contents
 - [🧩 PXE Boot System](https://github.com/IT-LAB-UAI/Documentation/blob/main/PXE/README.md#-pxe-boot-system)
