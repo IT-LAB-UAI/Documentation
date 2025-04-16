@@ -63,11 +63,12 @@ You can use this file to navigate to the README of each individual project.
 
 ### Table of Contents
 
-- [🧰 Configuration and Deployment](https://github.com/IT-LAB-UAI/LAB-Control/edit/develop/README.md#-configuration-and-deployment)
-  - [🧪 1. Config `.env` File (Testing/Development)](https://github.com/IT-LAB-UAI/LAB-Control/edit/develop/README.md#-1-config-env-file-located-in-the-config-directory-for-testingdevelop)
-  - [🌍 2. Root `.env` File (Docker Compose)](https://github.com/IT-LAB-UAI/LAB-Control/edit/develop/README.md#-2-root-env-file-located-in-the-root-directory-of-the-project)
-- [📦 Project Structure](https://github.com/IT-LAB-UAI/LAB-Control/edit/develop/README.md#-project-structure)
-- [📁 Project Structure (Definition)](https://github.com/IT-LAB-UAI/LAB-Control/edit/develop/README.md#-project-structure-definition)
+- [🧰 Configuration and Deployment](https://github.com/IT-LAB-UAI/LAB-Control/blob/develop/README.md#-configuration-and-deployment)
+  - [🧪 1. Config `.env` File (Testing/Development)](https://github.com/IT-LAB-UAI/LAB-Control/blob/develop/README.md#-1-config-env-file-located-in-the-config-directory-for-testingdevelop)
+  - [🌍 2. Root `.env` File (Docker Compose)](https://github.com/IT-LAB-UAI/LAB-Control/blob/develop/README.md#-2-root-env-file-located-in-the-root-directory-of-the-project)
+- [📦 Project Structure](https://github.com/IT-LAB-UAI/LAB-Control/blob/develop/README.md#-project-structure)
+- [📁 Project Structure (Definition)](https://github.com/IT-LAB-UAI/LAB-Control/blob/develop/README.md#-project-structure-definition)
+
 
 </details>
 
