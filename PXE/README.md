@@ -1,3 +1,26 @@
+## 📚 Table of Contents
+
+- [🧩 PXE Boot System](#-pxe-boot-system)
+- [🧱 Prerequisites](#-prerequisites)
+- [📝 What This Guide Covers](#-what-this-guide-covers)
+- [🖥️ System Architecture](#️-system-architecture)
+- [🔄 System Workflow](#-system-workflow)
+- [🧭 Walkthrough: PXE Bootfile Configuration on the Server](#-walkthrough-pxe-bootfile-configuration-on-the-server)
+  - [📌 1. Define Your PXE Bootfile](#-1-define-your-pxe-bootfile)
+  - [📂 2. Choose a Directory for Your PXE Files](#-2-choose-a-directory-for-your-pxe-files)
+  - [⚙️ 3. Update the TFTP Server Configuration](#-3-update-the-tftp-server-configuration)
+  - [🔄 4. Restart the TFTP Service](#-4-restart-the-tftp-service)
+  - [✅ 5. Verify TFTP Service Is Running Correctly](#-5-verify-tftp-service-is-running-correctly)
+- [📝 Configuring Unattended Installation via `preseed.cfg`](#-configuring-unattended-installation-via-preseedcfg)
+- [🌐 Exposing the `preseed.cfg` File to the Network](#-exposing-the-preseedcfg-file-to-the-network)
+- [🔧 Finalizing the Server-Side: What's Next?](#-finalizing-the-server-side-whats-next)
+- [📡 Configure the Cisco Router](#-configure-the-cisco-router)
+  - [⚙️ Cisco Router Configuration](#️-cisco-router-configuration)
+- [🖥️ Final Step: Host Machine Configuration](#️-final-step-host-machine-configuration)
+  - [⚙️ BIOS/UEFI Settings](#️-biosuefi-settings)
+  - [⌨️ Booting into PXE](#️-booting-into-pxe)
+  - [📥 Installing Debian via Preseed](#-installing-debian-via-preseed)
+
 # 🧩 PXE Boot System 
 
 This is the documentation of the PXE (Preboot Execution Environment) project implemented for the **IT-LAB-UAI**. The goal of this setup is to boot and provision machines in the lab automatically with a default configuration — making the setup and initialization process fully automated and consistent across devices.
@@ -31,29 +54,6 @@ In this documentation, we will:
 > For complete installation instructions, refer to the dedicated documentation linked above.  
 > This guide focuses on tying the pieces together and ensuring interoperability across the full system.
 ---
-
-## 📚 Table of Contents
-
-- [🧩 PXE Boot System](#-pxe-boot-system)
-- [🧱 Prerequisites](#-prerequisites)
-- [📝 What This Guide Covers](#-what-this-guide-covers)
-- [🖥️ System Architecture](#️-system-architecture)
-- [🔄 System Workflow](#-system-workflow)
-- [🧭 Walkthrough: PXE Bootfile Configuration on the Server](#-walkthrough-pxe-bootfile-configuration-on-the-server)
-  - [📌 1. Define Your PXE Bootfile](#-1-define-your-pxe-bootfile)
-  - [📂 2. Choose a Directory for Your PXE Files](#-2-choose-a-directory-for-your-pxe-files)
-  - [⚙️ 3. Update the TFTP Server Configuration](#-3-update-the-tftp-server-configuration)
-  - [🔄 4. Restart the TFTP Service](#-4-restart-the-tftp-service)
-  - [✅ 5. Verify TFTP Service Is Running Correctly](#-5-verify-tftp-service-is-running-correctly)
-- [📝 Configuring Unattended Installation via `preseed.cfg`](#-configuring-unattended-installation-via-preseedcfg)
-- [🌐 Exposing the `preseed.cfg` File to the Network](#-exposing-the-preseedcfg-file-to-the-network)
-- [🔧 Finalizing the Server-Side: What's Next?](#-finalizing-the-server-side-whats-next)
-- [📡 Configure the Cisco Router](#-configure-the-cisco-router)
-  - [⚙️ Cisco Router Configuration](#️-cisco-router-configuration)
-- [🖥️ Final Step: Host Machine Configuration](#️-final-step-host-machine-configuration)
-  - [⚙️ BIOS/UEFI Settings](#️-biosuefi-settings)
-  - [⌨️ Booting into PXE](#️-booting-into-pxe)
-  - [📥 Installing Debian via Preseed](#-installing-debian-via-preseed)
 
 
 ## 🖥️ System Architecture
