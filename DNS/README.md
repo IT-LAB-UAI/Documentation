@@ -12,7 +12,7 @@ What we will describe below is how the DNS was installed and set up according to
 - [📖 DNS Configuration Overview](#-dns-configuration-overview)
   - [🖥️ Server-Side Configuration](#-server-side-configuration)
   - [📡 Router-Side Configuration](#-router-side-configuration)
-- [⚙️ Step 1: Configuring the DNS Service on the Host Machine](#-step-1-configuring-the-dns-service-on-the-host-machine)
+- [🧑‍💻 Step 1: Configuring the DNS Service on the Host Machine](#-step-1-configuring-the-dns-service-on-the-host-machine)
   - [🔌 1. Set the Listening Interface](#-1-set-the-listening-interface)
   - [🎯 2. Restrict Listening Addresses](#-2-restrict-listening-addresses)
   - [🪵 3. Enable Logging for Debugging](#-3-enable-logging-for-debugging)
@@ -20,7 +20,7 @@ What we will describe below is how the DNS was installed and set up according to
 - [🔧 Step 2: Configuring the Router to Use the DNS Server](#-step-2-configuring-the-router-to-use-the-dns-server)
   - [🔗 1. Connect to the Cisco Router](#-1-connect-to-the-cisco-router)
   - [🔐 2. Enter Privileged EXEC Mode](#-2-enter-privileged-exec-mode)
-  - [🛠️ 3. Enter Global Configuration Mode](#-3-enter-global-configuration-mode)
+  - [🔧 3. Enter Global Configuration Mode](#-3-enter-global-configuration-mode)
   - [📂 4. Modify the DHCP Pool](#-4-modify-the-dhcp-pool)
   - [🌐 5. Set the DNS Server for the DHCP Pool](#-5-set-the-dns-server-for-the-dhcp-pool)
   - [💾 6. Save and Exit](#-6-save-and-exit)
@@ -77,7 +77,7 @@ Therefore, we will proceed with configuring DNS at the **network level**, direct
 ---
 
 
-### ⚙️ Step 1: Configuring the DNS Service on the Host Machine
+### 🧑‍💻 Step 1: Configuring the DNS Service on the Host Machine
 
 With the `dnsmasq` service already running, we now need to configure it properly.  
 The main configuration file is located at `/etc/dnsmasq.conf`.
@@ -173,7 +173,7 @@ Router-1>enable
 You will be prompted to enter the router's secret password. After entering it, you’ll be in EXEC mode.
 
 ---
-#### 🛠️ 3. Enter Global Configuration Mode
+#### 🔧 3. Enter Global Configuration Mode
 
 Once inside, type:
 
