@@ -4,8 +4,7 @@ This README serves as an index to the documentation for each project carried out
 You can use this file to navigate to the README of each individual project.
 
 # [Cisco](https://github.com/IT-LAB-UAI/Documentation/blob/main/Cisco/README.md)
-## 📚 Cisco Router Configuration – Table of Contents
-
+### 📚 Cisco Router Configuration – Table of Contents
 - [🔄 Resetting the Cisco 2901 Router to Factory Defaults](https://github.com/IT-LAB-UAI/Documentation/blob/main/Cisco/README.md#-resetting-the-cisco-2901-router-to-factory-defaults)
   - [🔧 Steps to Erase the Current Configuration](https://github.com/IT-LAB-UAI/Documentation/blob/main/Cisco/README.md#-steps-to-erase-the-current-configuration)
 - [⏩ Skipping Initial Configuration Dialog](https://github.com/IT-LAB-UAI/Documentation/blob/main/Cisco/README.md#-skipping-initial-configuration-dialog)
@@ -26,7 +25,7 @@ You can use this file to navigate to the README of each individual project.
   - [🧬 Subinterface Configuration for All VLANs](https://github.com/IT-LAB-UAI/Documentation/blob/main/Cisco/README.md#-subinterface-configuration-for-all-vlans)
 
 # [DNS](https://github.com/IT-LAB-UAI/Documentation/blob/main/DNS/README.md)
-## 📚 DNS Configuration – Table of Contents
+### 📚 DNS Configuration – Table of Contents
 - [🧰 Prerequisites](https://github.com/IT-LAB-UAI/Documentation/blob/main/DNS/README.md#-prerequisites)
 - [📦 Installation](https://github.com/IT-LAB-UAI/Documentation/blob/main/DNS/README.md#-installation)
 - [🔍 Verifying the Installation](https://github.com/IT-LAB-UAI/Documentation/blob/main/DNS/README.md#-verifying-the-installation)
@@ -55,7 +54,6 @@ You can use this file to navigate to the README of each individual project.
 
 # [PXE](https://github.com/IT-LAB-UAI/Documentation/blob/main/PXE/README.md)
 ### 📚 PXE Boot System Documentation – Table of Contents
-
 - [🧩 PXE Boot System](https://github.com/IT-LAB-UAI/Documentation/blob/main/PXE/README.md#-pxe-boot-system)
 - [🧱 Prerequisites](https://github.com/IT-LAB-UAI/Documentation/blob/main/PXE/README.md#-prerequisites)
 - [📝 What This Guide Covers](https://github.com/IT-LAB-UAI/Documentation/blob/main/PXE/README.md#-what-this-guide-covers)
