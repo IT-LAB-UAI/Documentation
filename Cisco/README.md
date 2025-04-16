@@ -99,7 +99,7 @@ After resetting the router, you might notice that it attempts to fetch a configu
 
 To prevent this behavior, we disable the automatic configuration service.
 
-### 🔧Disable TFTP Configuration Fetch:
+### 🔧 Disable TFTP Configuration Fetch:
 
 ```shell
 configure terminal
