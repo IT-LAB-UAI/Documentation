@@ -1,4 +1,4 @@
-# 🛠️Cisco Router Configuration Guide – IT-LAB-UAI
+# 🛠️ Cisco Router Configuration Guide – IT-LAB-UAI
 
 Welcome to the official network configuration guide for **IT-LAB-UAI**, the IT laboratory of **Universidad Adolfo Ibáñez**. This document outlines the step-by-step process to configure a **Cisco 2901 router** for a multi-VLAN lab environment using trunking, subinterfaces, DHCP, and NAT.
 
