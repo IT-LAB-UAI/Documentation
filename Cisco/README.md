@@ -19,9 +19,9 @@ Whether you're a student setting up your first Cisco lab or an assistant maintai
 ## 📚 Table of Contents
 
 - [🛠️ Cisco Router Configuration Guide – IT-LAB-UAI](#-cisco-router-configuration-guide--it-lab-uai)
-- [♻️ Resetting the Cisco 2901 Router to Factory Defaults](#resetting-the-cisco-2901-router-to-factory-defaults)
+- [🧹 Resetting the Cisco 2901 Router to Factory Defaults](#-resetting-the-cisco-2901-router-to-factory-defaults)
   - [🔄 Steps to Erase the Current Configuration](#-steps-to-erase-the-current-configuration)
-- [⏭️ Skipping Initial Configuration Dialog](#-skipping-initial-configuration-dialog)
+- [⏩ Skipping Initial Configuration Dialog](#-skipping-initial-configuration-dialog)
 - [📡 Disabling Automatic TFTP Configuration Fetch](#-disabling-automatic-tftp-configuration-fetch)
   - [🔧 Disable TFTP Configuration Fetch](#-disable-tftp-configuration-fetch)
 - [🧩 Lab VLAN Setup](#-lab-vlan-setup)
@@ -31,7 +31,7 @@ Whether you're a student setting up your first Cisco lab or an assistant maintai
   - [📦 DHCP Pool Configuration for All VLANs](#-dhcp-pool-configuration-for-all-vlans)
 - [🔌 Configuring Interfaces: External (DHCP) and Internal (Trunk)](#-configuring-interfaces-external-dhcp-and-internal-trunk)
   - [🌐 External Interface (`GigabitEthernet0/0`)](#-external-interface-gigabitethernet00)
-  - [🎛️ Internal Trunk Interface (`GigabitEthernet0/1`)](#-internal-trunk-interface-gigabitethernet01)
+  - [🖧 Internal Trunk Interface (`GigabitEthernet0/1`)](#-internal-trunk-interface-gigabitethernet01)
 - [🧱 Configuring Subinterfaces for Each VLAN](#-configuring-subinterfaces-for-each-vlan)
   - [❓ Why Do We Use 802.1Q Encapsulation?](#-why-do-we-use-8021q-encapsulation)
   - [📐 Subinterface Configuration Template](#-subinterface-configuration-template)
