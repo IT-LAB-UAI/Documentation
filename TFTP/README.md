@@ -4,7 +4,18 @@ This is the documentation of the TFTP server that is used on the LAB-IT-UAI. The
 
 This documentation provides a quick installation guide for the TFTP server using Peter's TFTP server `hpa-tftp`, as recommended in the Debian documentation.
 
-## ⚙️ Installation and Setup
+## 📚 Table of Contents
+
+- [🧰 Installation and Setup](#️installation-and-setup)
+  - [🔄 1. Update the System](#1-update-the-system)
+  - [📦 2. Install the TFTP Server Package](#2-install-the-tftp-server-package)
+  - [📡 3. Check the TFTP Service Status](#3-check-the-tftp-service-status)
+  - [🛠️ 4. Configure the TFTP Server](#4-configure-the-tftp-server)
+  - [✅ 5. Restart the Service and Verify](#5-restart-the-service-and-verify)
+- [📁 What Goes in the TFTP Directory?](#-what-goes-in-the-tftp-directory)
+- [📚 PXE Boot Project](#-pxe-boot-project)
+
+## 🧰 Installation and Setup
 
 ### 1. Update the System
 First, make sure your package list is up to date and that the system is upgraded:
