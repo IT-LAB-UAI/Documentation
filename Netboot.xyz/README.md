@@ -10,8 +10,18 @@ To install **netboot.xyz**, we’ll follow the guidance provided by [linuxserver
 > ⚠️ **Note:** Before setting up netboot.xyz, you should already have a **TFTP server** installed and running.  
 > Here you can find the documentation for setting up the [TFTP](https://github.com/IT-LAB-UAI/Documentation/blob/main/TFTP/README.md) server.
 
+## 📚 Netboot.xyz Setup – Table of Contents
 
-## ⚙️ Install and Setup
+- [🧰 Install and Setup](https://github.com/IT-LAB-UAI/Documentation/blob/main/Netboot.xyz/README.md#️-install-and-setup)
+- [🐳 Docker Compose Setup](https://github.com/IT-LAB-UAI/Documentation/blob/main/Netboot.xyz/README.md#-docker-compose-setup)
+- [📝 Docker Compose File](https://github.com/IT-LAB-UAI/Documentation/blob/main/Netboot.xyz/README.md#-docker-compose-file)
+- [🚀 Deploy the Application](https://github.com/IT-LAB-UAI/Documentation/blob/main/Netboot.xyz/README.md#-deploy-the-application)
+- [🌐 Accessing the Web Interface and PXE Boot File](https://github.com/IT-LAB-UAI/Documentation/blob/main/Netboot.xyz/README.md#-accessing-the-web-interface-and-pxe-boot-file)
+  - [📥 Downloading the Default PXE Boot File](https://github.com/IT-LAB-UAI/Documentation/blob/main/Netboot.xyz/README.md#-downloading-the-default-pxe-boot-file)
+- [📚 PXE Boot Project](https://github.com/IT-LAB-UAI/Documentation/blob/main/Netboot.xyz/README.md#--pxe-boot-project)
+
+
+## 🧰 Install and Setup
 
 The first step in this installation is to ensure that Docker is installed and properly configured on your machine. If Docker is not yet installed, you can follow the official [Docker documentation](https://docs.docker.com/get-docker/) for detailed instructions specific to your operating system.
 
