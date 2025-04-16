@@ -49,14 +49,20 @@ You can use this file to navigate to the README of each individual project.
 # [LAB-Control](https://github.com/IT-LAB-UAI/LAB-Control/blob/develop/README.md)
 
 # [NETBOOT.XYZ](https://github.com/IT-LAB-UAI/Documentation/blob/main/Netboot.xyz/README.md)
-## 📚 Netboot.xyz Setup – Table of Contents
-- [🧰 Install and Setup](https://github.com/IT-LAB-UAI/Documentation/blob/main/Netboot.xyz/README.md#-install-and-setup)
-- [🐳 Docker Compose Setup](https://github.com/IT-LAB-UAI/Documentation/blob/main/Netboot.xyz/README.md#-docker-compose-setup)
-- [📝 Docker Compose File](https://github.com/IT-LAB-UAI/Documentation/blob/main/Netboot.xyz/README.md#-docker-compose-file)
-- [🚀 Deploy the Application](https://github.com/IT-LAB-UAI/Documentation/blob/main/Netboot.xyz/README.md#-deploy-the-application)
-- [🌐 Accessing the Web Interface and PXE Boot File](https://github.com/IT-LAB-UAI/Documentation/blob/main/Netboot.xyz/README.md#-accessing-the-web-interface-and-pxe-boot-file)
-  - [📥 Downloading the Default PXE Boot File](https://github.com/IT-LAB-UAI/Documentation/blob/main/Netboot.xyz/README.md#-downloading-the-default-pxe-boot-file)
-- [📚 PXE Boot Project](https://github.com/IT-LAB-UAI/Documentation/blob/main/Netboot.xyz/README.md#-pxe-boot-project)
+<details>
+<summary>📚 Click to expand Table of Contents</summary>
+
+### Table of Contents
+
+- [🧰 Install and Setup](#-install-and-setup)
+- [🐳 Docker Compose Setup](#-docker-compose-setup)
+- [📝 Docker Compose File](#-docker-compose-file)
+- [🚀 Deploy the Application](#-deploy-the-application)
+- [🌐 Accessing the Web Interface and PXE Boot File](#-accessing-the-web-interface-and-pxe-boot-file)
+  - [📥 Downloading the Default PXE Boot File](#-downloading-the-default-pxe-boot-file)
+- [📚 PXE Boot Project](#-pxe-boot-project)
+
+</details>
 
 # [TFTP](https://github.com/IT-LAB-UAI/Documentation/blob/main/TFTP/README.md)
 
