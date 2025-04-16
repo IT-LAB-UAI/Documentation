@@ -13,7 +13,7 @@ You can use this file to navigate to the README of each individual project.
 
 # [TFTP](https://github.com/IT-LAB-UAI/Documentation/blob/main/TFTP/README.md)
 
-# [PXE]
+# [PXE](https://github.com/IT-LAB-UAI/Documentation/blob/main/PXE/README.md)
 ## 📚 PXE Boot System Documentation – Table of Contents
 
 - [🧩 PXE Boot System](https://github.com/IT-LAB-UAI/Documentation/blob/main/PXE/README.md#-pxe-boot-system)
