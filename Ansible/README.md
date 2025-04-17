@@ -10,6 +10,5 @@ By leveraging **Ansible**, we ensure:
 - **Simplicity**, with readable YAML-based playbooks and no need for agents on target machines.
 
 The idea behind this structure is that **everything in the infrastructure should be buildable and recoverable through code**, offering full control and auditability of every stateful change in the LAB.
----
 
 ## 🧭 Overview of Directories
