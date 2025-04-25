@@ -466,3 +466,211 @@ These ACLs likely support a **segmented network** where:
 - `192.168.1.x` is a protected or core network.
 - `192.168.5.x` is a more restricted or guest network.
 - Other networks have partial access based on their role.
+- 
+
+## 🧾 Configuration Example
+
+```plaintext
+primary-router#show running-config 
+Building configuration...
+
+Current configuration : 4159 bytes
+!
+! Last configuration change at 21:12:47 UTC Wed Apr 16 2025
+! NVRAM config last updated at 21:12:50 UTC Wed Apr 16 2025
+! NVRAM config last updated at 21:12:50 UTC Wed Apr 16 2025
+version 15.1
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname primary-router
+!
+boot-start-marker
+boot-end-marker
+!
+!
+!
+no aaa new-model
+!
+no ipv6 cef
+ip source-route
+ip cef
+!
+!         
+!
+!
+ip dhcp pool MANAGEMENT
+ network 192.168.1.0 255.255.255.0
+ default-router 192.168.1.1 
+ dns-server 8.8.8.8 
+!
+ip dhcp pool SERVER
+ network 192.168.2.0 255.255.255.0
+ bootfile netboot.xyz.kpxe
+ next-server 192.168.2.2 
+ default-router 192.168.2.1 
+ dns-server 192.168.2.2 8.8.8.8 
+!
+ip dhcp pool COMPUTERS
+ network 192.168.3.0 255.255.255.0
+ bootfile netboot.xyz.kpxe
+ next-server 192.168.2.2 
+ default-router 192.168.3.1 
+ dns-server 192.168.2.2 
+!
+ip dhcp pool SERVICE
+ network 192.168.4.0 255.255.255.0
+ dns-server 8.8.8.8 
+ default-router 192.168.4.1 
+!
+ip dhcp pool WIFI
+ network 192.168.5.0 255.255.255.0
+ default-router 192.168.5.1 
+ dns-server 8.8.8.8 
+!
+ip dhcp pool SERVERS
+ bootfile undionly.kpxe
+ next-server 192.168.2.2 
+!
+!
+multilink bundle-name authenticated
+!
+!
+crypto pki token default removal timeout 0
+!
+!
+license udi pid CISCO2901/K9 sn FTX15498074
+!
+!
+!
+!
+!         
+!
+!
+!
+interface Embedded-Service-Engine0/0
+ no ip address
+ shutdown
+!
+interface GigabitEthernet0/0
+ ip address dhcp
+ ip nat outside
+ ip virtual-reassembly in
+ duplex auto
+ speed auto
+!
+interface GigabitEthernet0/1
+ no ip address
+ no ip route-cache
+ duplex auto
+ speed auto
+!
+interface GigabitEthernet0/1.1
+ encapsulation dot1Q 1 native
+ ip address 192.168.1.1 255.255.255.0
+ ip access-group 101 in
+ ip nat inside
+ ip virtual-reassembly in
+ no ip route-cache
+!
+interface GigabitEthernet0/1.2
+ encapsulation dot1Q 2
+ ip address 192.168.2.1 255.255.255.0
+ ip nat inside
+ ip virtual-reassembly in
+ no ip route-cache
+!
+interface GigabitEthernet0/1.3
+ encapsulation dot1Q 3
+ ip address 192.168.3.1 255.255.255.0
+ ip nat inside
+ ip virtual-reassembly in
+ no ip route-cache
+!
+interface GigabitEthernet0/1.4
+ encapsulation dot1Q 4
+ ip address 192.168.4.1 255.255.255.0
+ ip nat inside
+ ip virtual-reassembly in
+ no ip route-cache
+!
+interface GigabitEthernet0/1.5
+ encapsulation dot1Q 5
+ ip address 192.168.5.1 255.255.255.0
+ ip access-group 105 in
+ ip nat inside
+ ip virtual-reassembly in
+ no ip route-cache
+!
+interface GigabitEthernet0/0/0
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+!
+interface GigabitEthernet0/1/0
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+!
+interface GigabitEthernet0/2/0
+ no ip address
+ shutdown 
+ duplex auto
+ speed auto
+!
+interface GigabitEthernet0/3/0
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+!
+ip forward-protocol nd
+!
+no ip http server
+no ip http secure-server
+!
+ip nat inside source list 1 interface GigabitEthernet0/0 overload
+ip route 0.0.0.0 0.0.0.0 10.80.3.1 254
+ip route 0.0.0.0 0.0.0.0 10.80.3.1 254
+!
+access-list 1 permit 192.168.0.0 0.0.255.255
+access-list 101 permit udp any eq bootpc any eq bootps
+access-list 101 permit udp any eq bootps any eq bootpc
+access-list 101 deny   ip 192.168.2.0 0.0.0.255 192.168.1.0 0.0.0.255
+access-list 101 deny   ip 192.168.3.0 0.0.0.255 192.168.1.0 0.0.0.255
+access-list 101 deny   ip 192.168.4.0 0.0.0.255 192.168.1.0 0.0.0.255
+access-list 101 deny   ip 192.168.5.0 0.0.0.255 192.168.1.0 0.0.0.255
+access-list 101 permit ip any any
+access-list 105 permit udp any eq bootpc any eq bootps
+access-list 105 permit udp any eq bootps any eq bootpc
+access-list 105 deny   ip 192.168.5.0 0.0.0.255 192.168.1.0 0.0.0.255
+access-list 105 deny   ip 192.168.5.0 0.0.0.255 192.168.2.0 0.0.0.255
+access-list 105 deny   ip 192.168.5.0 0.0.0.255 192.168.3.0 0.0.0.255
+access-list 105 deny   ip 192.168.5.0 0.0.0.255 192.168.4.0 0.0.0.255
+access-list 105 permit ip 192.168.5.0 0.0.0.255 any
+!
+!
+!
+control-plane
+!
+!
+!
+line con 0
+line aux 0
+line 2
+ no activation-character
+ no exec
+ transport preferred none
+ transport input all
+ transport output pad telnet rlogin lapb-ta mop udptn v120 ssh
+ stopbits 1
+line vty 0 4
+ login
+ transport input all
+!
+scheduler allocate 20000 1000
+end
+```
