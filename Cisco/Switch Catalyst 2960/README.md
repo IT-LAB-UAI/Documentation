@@ -1,4 +1,4 @@
-🛠️ Cisco Switch Configuration Guide – IT-LAB-UAI
+# 🛠️ Cisco Switch Configuration Guide – IT-LAB-UAI
 Welcome to the official network configuration guide for IT-LAB-UAI, the IT laboratory of Universidad Adolfo Ibáñez. This document outlines the step-by-step process to configure a Cisco Catalyst 2960 switch.
 This guide asume that the router is allready configured as is said on the [Router 2901 README.md](https://github.com/IT-LAB-UAI/Documentation/blob/main/Cisco/README.md).
 
