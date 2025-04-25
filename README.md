@@ -6,7 +6,7 @@ You can use this file to navigate to the README of each individual project.
 
 # [Cisco](https://github.com/IT-LAB-UAI/Documentation/blob/main/Cisco/README.md)
 <details>
-<summary>📚 Cisco Table of Contents [Click to Expand]</summary>
+<summary>📚 Cisco Router Table of Contents [Click to Expand]</summary>
 
 ### 📚 Cisco Router Configuration – Table of Contents
 - [🔄 Resetting the Cisco 2901 Router to Factory Defaults](https://github.com/IT-LAB-UAI/Documentation/blob/main/Cisco/Router%202901/README.md#-resetting-the-cisco-2901-router-to-factory-defaults)
@@ -27,6 +27,28 @@ You can use this file to navigate to the README of each individual project.
   - [📐 Subinterface Configuration Template](https://github.com/IT-LAB-UAI/Documentation/blob/main/Cisco/Router%202901/README.md#-subinterface-configuration-template)
   - [🧪 Example - VLAN 1 (Management)](https://github.com/IT-LAB-UAI/Documentation/blob/main/Cisco/Router%202901/README.md#-example---vlan-1-management)
   - [🧬 Subinterface Configuration for All VLANs](https://github.com/IT-LAB-UAI/Documentation/blob/main/Cisco/Router%202901/README.md#-subinterface-configuration-for-all-vlans)
+
+</details>
+
+<details>
+<summary>📚 Cisco Switch Table of Contents [Click to Expand]</summary>
+
+### 📚 Cisco Switch### 📚 Cisco Switch Configuration – Table of Contents Configuration – Table of Contents
+- [🛠️ Cisco Router Configuration Guide – IT-LAB-UAI](https://github.com/IT-LAB-UAI/Documentation/blob/main/Cisco/Switch%20Catalyst%202960/README.md#-cisco-router-configuration-guide--it-lab-uai)  
+- [🔌 Connecting to Cisco Catalyst 2960 Switch via `minicom`](https://github.com/IT-LAB-UAI/Documentation/blob/main/Cisco/Switch%20Catalyst%202960/README.md#-connecting-to-cisco-catalyst-2960-switch-via-minicom)
+- [🧰 Switch Configuration – Catalyst 2960](https://github.com/IT-LAB-UAI/Documentation/blob/main/Cisco/Switch%20Catalyst%202960/README.md#-switch-configuration--catalyst-2960)
+  - [🔧 Step 1: Enter Privileged EXEC Mode](https://github.com/IT-LAB-UAI/Documentation/blob/main/Cisco/Switch%20Catalyst%202960/README.md#-step-1-enter-privileged-exec-mode)
+  - [📝 Step 2: Enter Global Configuration Mode](https://github.com/IT-LAB-UAI/Documentation/blob/main/Cisco/Switch%20Catalyst%202960/README.md#-step-2-enter-global-configuration-mode)
+  - [📛 Step 3: Set a Hostname for the Switch](https://github.com/IT-LAB-UAI/Documentation/blob/main/Cisco/Switch%20Catalyst%202960/README.md#-step-3-set-a-hostname-for-the-switch)
+  - [🪪 Step 4: Create the VLANs](https://github.com/IT-LAB-UAI/Documentation/blob/main/Cisco/Switch%20Catalyst%202960/README.md#-step-4-create-the-vlans)
+  - [🌐 Step 5: Configure the Trunk Port to the Router](https://github.com/IT-LAB-UAI/Documentation/blob/main/Cisco/Switch%20Catalyst%202960/README.md#-step-5-configure-the-trunk-port-to-the-router)
+  - [🪛 Step 6: Configure Access Ports for End Devices](https://github.com/IT-LAB-UAI/Documentation/blob/main/Cisco/Switch%20Catalyst%202960/README.md#-step-6-configure-access-ports-for-end-devices)
+  - [🌐 Step 7: (Optional) Set Up Management IP on VLAN 1](https://github.com/IT-LAB-UAI/Documentation/blob/main/Cisco/Switch%20Catalyst%202960/README.md#-step-7-optional-set-up-management-ip-on-vlan-1)
+  - [🌍 Step 8: Set the Default Gateway for Switch](https://github.com/IT-LAB-UAI/Documentation/blob/main/Cisco/Switch%20Catalyst%202960/README.md#-step-8-set-the-default-gateway-for-switch)
+  - [💾 Step 9: Save the Configuration](https://github.com/IT-LAB-UAI/Documentation/blob/main/Cisco/Switch%20Catalyst%202960/README.md#-step-9-save-the-configuration)
+  - [🧪 Step 10: Test Connectivity](https://github.com/IT-LAB-UAI/Documentation/blob/main/Cisco/Switch%20Catalyst%202960/README.md#-step-10-test-connectivity)
+
+
 
 ### 📚 Cisco Switch Configuration – Table of Contents
 
