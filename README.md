@@ -11,7 +11,7 @@ You can use this file to navigate to the README of each individual project.
 ### 📚 Cisco Router Configuration – Table of Contents
 - [🔄 Resetting the Cisco 2901 Router to Factory Defaults](https://github.com/IT-LAB-UAI/Documentation/blob/main/Cisco/Router%202901%20/README.md#-resetting-the-cisco-2901-router-to-factory-defaults)
   - [🔧 Steps to Erase the Current Configuration](https://github.com/IT-LAB-UAI/Documentation/blob/main/Cisco/Router2901/README.md#-steps-to-erase-the-current-configuration)
-- [⏩ Skipping Initial Configuration Dialog](https://github.com/IT-LAB-UAI/Documentation/blob/main/Cisco/Router%202901%20/README.md#-skipping-initial-configuration-dialog)
+- [⏩ Skipping Initial Configuration Dialog](https://github.com/IT-LAB-UAI/Documentation/blob/main/Cisco/Router-2901/README.md#-skipping-initial-configuration-dialog)
 - [📡 Disabling Automatic TFTP Configuration Fetch](https://github.com/IT-LAB-UAI/Documentation/blob/main/Cisco/Router%202901%20/README.md#-disabling-automatic-tftp-configuration-fetch)
   - [🛑 Disable TFTP Configuration Fetch](https://github.com/IT-LAB-UAI/Documentation/blob/main/Cisco/Router%202901%20/README.md#-disable-tftp-configuration-fetch)
 - [🧩 Lab VLAN Setup](https://github.com/IT-LAB-UAI/Documentation/blob/main/Cisco/Router%202901%20/README.md#-lab-vlan-setup)
