@@ -9,12 +9,12 @@ You can use this file to navigate to the README of each individual project.
 <summary>📚 Cisco Table of Contents [Click to Expand]</summary>
 
 ### 📚 Cisco Router Configuration – Table of Contents
-- [🔄 Resetting the Cisco 2901 Router to Factory Defaults](https://github.com/IT-LAB-UAI/Documentation/blob/main/Cisco/README.md#-resetting-the-cisco-2901-router-to-factory-defaults)
-  - [🔧 Steps to Erase the Current Configuration](https://github.com/IT-LAB-UAI/Documentation/blob/main/Cisco/README.md#-steps-to-erase-the-current-configuration)
-- [⏩ Skipping Initial Configuration Dialog](https://github.com/IT-LAB-UAI/Documentation/blob/main/Cisco/README.md#-skipping-initial-configuration-dialog)
-- [📡 Disabling Automatic TFTP Configuration Fetch](https://github.com/IT-LAB-UAI/Documentation/blob/main/Cisco/README.md#-disabling-automatic-tftp-configuration-fetch)
-  - [🛑 Disable TFTP Configuration Fetch](https://github.com/IT-LAB-UAI/Documentation/blob/main/Cisco/README.md#-disable-tftp-configuration-fetch)
-- [🧩 Lab VLAN Setup](https://github.com/IT-LAB-UAI/Documentation/blob/main/Cisco/README.md#-lab-vlan-setup)
+- [🔄 Resetting the Cisco 2901 Router to Factory Defaults](https://github.com/IT-LAB-UAI/Documentation/blob/main/Cisco/Router%202901%20/README.md#-resetting-the-cisco-2901-router-to-factory-defaults)
+  - [🔧 Steps to Erase the Current Configuration](https://github.com/IT-LAB-UAI/Documentation/blob/main/Cisco/Router%202901%20/README.md#-steps-to-erase-the-current-configuration)
+- [⏩ Skipping Initial Configuration Dialog](https://github.com/IT-LAB-UAI/Documentation/blob/main/Cisco/Router%202901%20/README.md#-skipping-initial-configuration-dialog)
+- [📡 Disabling Automatic TFTP Configuration Fetch](https://github.com/IT-LAB-UAI/Documentation/blob/main/Cisco/Router%202901%20/README.md#-disabling-automatic-tftp-configuration-fetch)
+  - [🛑 Disable TFTP Configuration Fetch](https://github.com/IT-LAB-UAI/Documentation/blob/main/Cisco/Router%202901%20/README.md#-disable-tftp-configuration-fetch)
+- [🧩 Lab VLAN Setup](https://github.com/IT-LAB-UAI/Documentation/blob/main/Cisco/Router%202901%20/README.md#-lab-vlan-setup)
 - [📝 Defining VLANs and DHCP Pools](https://github.com/IT-LAB-UAI/Documentation/blob/main/Cisco/README.md#-defining-vlans-and-dhcp-pools)
   - [📋 General VLAN DHCP Configuration Format](https://github.com/IT-LAB-UAI/Documentation/blob/main/Cisco/README.md#-general-vlan-dhcp-configuration-format)
   - [💡 Example - Server VLAN](https://github.com/IT-LAB-UAI/Documentation/blob/main/Cisco/README.md#-example---server-vlan)
@@ -27,6 +27,8 @@ You can use this file to navigate to the README of each individual project.
   - [📐 Subinterface Configuration Template](https://github.com/IT-LAB-UAI/Documentation/blob/main/Cisco/README.md#-subinterface-configuration-template)
   - [🧪 Example - VLAN 1 (Management)](https://github.com/IT-LAB-UAI/Documentation/blob/main/Cisco/README.md#-example---vlan-1-management)
   - [🧬 Subinterface Configuration for All VLANs](https://github.com/IT-LAB-UAI/Documentation/blob/main/Cisco/README.md#-subinterface-configuration-for-all-vlans)
+
+### 📚 Cisco Switch Configuration – Table of Contents
 
 </details>
 
