@@ -42,6 +42,60 @@ Whether you're a student setting up your first Cisco lab or an assistant maintai
 
 
 
+Sure! Here's a concise and clear instruction section you can insert into your `README.md` to explain how to use `minicom` to connect to a Cisco 2901 router via console cable:
+
+### 🔌 Connecting to Cisco 2901 Router via `minicom`
+
+To establish a console connection with the Cisco 2901 router using `minicom`, follow these steps:
+
+1. **Install `minicom`** (if not already installed):
+
+   ```bash
+   sudo apt-get update
+   sudo apt-get install minicom
+   ```
+
+2. **Identify the serial port** connected to your console cable:
+
+   ```bash
+   dmesg | grep tty
+   ```
+
+   Look for something like `/dev/ttyUSB0` (for USB-to-serial adapters) or `/dev/ttyACM0`.
+
+3. **Set up `minicom` with correct serial settings**:
+
+   ```bash
+   sudo minicom -s
+   ```
+
+   - Navigate to **"Serial port setup"**
+   - Set **Serial Device** to your detected port (e.g., `/dev/ttyUSB0`)
+   - Set **Bps/Par/Bits** to `9600 8N1`
+   - Disable **Hardware Flow Control** and **Software Flow Control**
+   - Save settings as default or save as a new configuration, then access it throw
+
+   ```bash
+   sudo minicom config_name
+   ```
+
+5. **Start `minicom`** with the selected configuration:
+
+   ```bash
+   sudo minicom
+   ```
+
+6. **Exit `minicom`** at any time by pressing:
+   ```
+   Ctrl + A, then Z → then X to exit
+   ```
+
+💡 If you encounter permission issues accessing `/dev/ttyUSB0`, add your user to the `dialout` group:
+
+```bash
+sudo usermod -aG dialout $USER
+logout
+```
 
 
 ## 🧹 Resetting the Cisco 2901 Router to Factory Defaults
