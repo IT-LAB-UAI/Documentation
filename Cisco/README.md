@@ -18,33 +18,36 @@ Whether you're a student setting up your first Cisco lab or an assistant maintai
 
 ## 📚 Table of Contents
 
-- [🛠️ Cisco Router Configuration Guide – IT-LAB-UAI](#-cisco-router-configuration-guide--it-lab-uai)
-- [🧹 Resetting the Cisco 2901 Router to Factory Defaults](#-resetting-the-cisco-2901-router-to-factory-defaults)
-  - [🔄 Steps to Erase the Current Configuration](#-steps-to-erase-the-current-configuration)
-- [⏩ Skipping Initial Configuration Dialog](#-skipping-initial-configuration-dialog)
-- [📡 Disabling Automatic TFTP Configuration Fetch](#-disabling-automatic-tftp-configuration-fetch)
-  - [🔧 Disable TFTP Configuration Fetch](#-disable-tftp-configuration-fetch)
-- [🧩 Lab VLAN Setup](#-lab-vlan-setup)
-- [📝 Defining VLANs and DHCP Pools](#-defining-vlans-and-dhcp-pools)
-  - [📋 General VLAN DHCP Configuration Format](#-general-vlan-dhcp-configuration-format)
-  - [💡 Example - Server VLAN](#-example---server-vlan)
-  - [📦 DHCP Pool Configuration for All VLANs](#-dhcp-pool-configuration-for-all-vlans)
-- [🔌 Configuring Interfaces: External (DHCP) and Internal (Trunk)](#-configuring-interfaces-external-dhcp-and-internal-trunk)
-  - [🌐 External Interface (`GigabitEthernet0/0`)](#-external-interface-gigabitethernet00)
-  - [🖧 Internal Trunk Interface (`GigabitEthernet0/1`)](#-internal-trunk-interface-gigabitethernet01)
-- [🧱 Configuring Subinterfaces for Each VLAN](#-configuring-subinterfaces-for-each-vlan)
-  - [❓ Why Do We Use 802.1Q Encapsulation?](#-why-do-we-use-8021q-encapsulation)
-  - [📐 Subinterface Configuration Template](#-subinterface-configuration-template)
-  - [🧪 Example - VLAN 1 (Management)](#-example---vlan-1-management)
-  - [🧬 Subinterface Configuration for All VLANs](#-subinterface-configuration-for-all-vlans)
+
+- [🛠️ Cisco Router Configuration Guide – IT-LAB-UAI](#-cisco-router-configuration-guide--it-lab-uai)  
+- [🔌 Connecting to Cisco 2901 Router via `minicom`](#-connecting-to-cisco-2901-router-via-minicom)  
+- [🧹 Resetting the Cisco 2901 Router to Factory Defaults](#-resetting-the-cisco-2901-router-to-factory-defaults)  
+  - [🔄 Steps to Erase the Current Configuration](#-steps-to-erase-the-current-configuration)  
+- [⏩ Skipping Initial Configuration Dialog](#-skipping-initial-configuration-dialog)  
+- [📡 Disabling Automatic TFTP Configuration Fetch](#-disabling-automatic-tftp-configuration-fetch)  
+  - [🔧 Disable TFTP Configuration Fetch](#-disable-tftp-configuration-fetch)  
+- [🧩 Lab VLAN Setup](#-lab-vlan-setup)  
+- [📝 Defining VLANs and DHCP Pools](#-defining-vlans-and-dhcp-pools)  
+  - [📋 General VLAN DHCP Configuration Format](#-general-vlan-dhcp-configuration-format)  
+  - [💡 Example - Server VLAN](#-example---server-vlan)  
+  - [📦 DHCP Pool Configuration for All VLANs](#-dhcp-pool-configuration-for-all-vlans)  
+- [🔌 Configuring Interfaces: External (DHCP) and Internal (Trunk)](#-configuring-interfaces-external-dhcp-and-internal-trunk)  
+  - [🌐 External Interface (`GigabitEthernet0/0`)](#-external-interface-gigabitethernet00)  
+  - [🖧 Internal Trunk Interface (`GigabitEthernet0/1`)](#-internal-trunk-interface-gigabitethernet01)  
+- [🧱 Configuring Subinterfaces for Each VLAN](#-configuring-subinterfaces-for-each-vlan)  
+  - [❓ Why Do We Use 802.1Q Encapsulation?](#-why-do-we-use-8021q-encapsulation)  
+  - [📐 Subinterface Configuration Template](#-subinterface-configuration-template)  
+  - [🧪 Example - VLAN 1 (Management)](#-example---vlan-1-management)  
+  - [🧬 Subinterface Configuration for All VLANs](#-subinterface-configuration-for-all-vlans)  
+- [🔒 Explanation of Access-Lists](#-explanation-of-access-lists)  
+  - [📃 Standard Access-List 1 – Permit 192.168.0.0/16](#-standard-access-list-1--permit-19216800-16)  
+  - [📡 Access-List 101 – DHCP and Inter-VLAN Restrictions](#-access-list-101--dhcp-and-inter-vlan-restrictions)  
+  - [🛡️ Access-List 105 – Restrict VLAN 5 to External Access Only](#-access-list-105--restrict-vlan-5-to-external-access-only)  
+
 
 ✅
 
-
-
-Sure! Here's a concise and clear instruction section you can insert into your `README.md` to explain how to use `minicom` to connect to a Cisco 2901 router via console cable:
-
-### 🔌 Connecting to Cisco 2901 Router via `minicom`
+## 🔌 Connecting to Cisco 2901 Router via `minicom`
 
 To establish a console connection with the Cisco 2901 router using `minicom`, follow these steps:
 
@@ -235,7 +238,7 @@ ip dhcp pool Wifi
  dns-server 8.8.8.8
 ```
 
-Once all VLANs are defined and DHCP is set, you can proceed with configuring the trunk and subinterfaces as shown in the previous step.
+Once all VLANs are defined and DHCP is set, y🔒 **Explanation of Access-Lists**ou can proceed with configuring the trunk and subinterfaces as shown in the previous step.
 
 
 ## 🔌 Configuring Interfaces: External (DHCP) and Internal (Trunk)
@@ -366,3 +369,100 @@ interface GigabitEthernet0/1.5
 ```
 
 Each subinterface is now ready to route packets between VLANs and provide gateway functionality. All of them are also marked as `ip nat inside` to support NAT
+
+---
+
+## 🔒 **Explanation of Access-Lists**
+
+Access control lists (ACLs) are used in Cisco devices to control traffic based on IP addresses, protocols, and port numbers. Let’s walk through each ACL and its rules.
+
+---
+
+### ✅ **Standard Access-List 1**
+
+```bash
+access-list 1 permit 192.168.0.0 0.0.255.255
+```
+
+- **Type:** Standard ACL (1–99)
+- **Function:** Allows IP traffic **from any host** in the IP range `192.168.0.0` to `192.168.255.255`.
+- **Wildcard mask:** `0.0.255.255` means the last two octets can vary (like a `/16` subnet mask).
+- **Usage:** This ACL is likely applied **inbound on an interface** to filter by source IP only.
+
+---
+
+### 🔐 **Extended Access-List 101**
+
+These ACLs are **extended** (100–199), which can filter traffic based on source/destination IP, protocol (TCP, UDP, ICMP, etc.), and port numbers.
+
+```bash
+access-list 101 permit udp any eq bootpc any eq bootps
+access-list 101 permit udp any eq bootps any eq bootpc
+```
+
+- **Purpose:** Allow **DHCP communication** (BOOTP is the underlying protocol of DHCP).
+  - `bootpc` = UDP port **68** (client)
+  - `bootps` = UDP port **67** (server)
+- **Use:** These two lines allow DHCP **requests and responses** between any client and any server.
+
+```bash
+access-list 101 deny ip 192.168.2.0 0.0.0.255 192.168.1.0 0.0.0.255
+access-list 101 deny ip 192.168.3.0 0.0.0.255 192.168.1.0 0.0.0.255
+access-list 101 deny ip 192.168.4.0 0.0.0.255 192.168.1.0 0.0.0.255
+access-list 101 deny ip 192.168.5.0 0.0.0.255 192.168.1.0 0.0.0.255
+```
+
+- **Purpose:** Deny **any traffic** from the mentioned networks (`192.168.2.x` to `192.168.5.x`) **destined to** the `192.168.1.x` network.
+- **Wildcard mask `0.0.0.255`** means it matches all hosts in a `/24` subnet.
+
+```bash
+access-list 101 permit ip any any
+```
+
+- **Purpose:** Allows **all other IP traffic** not denied above.
+- **Note:** Since ACLs are processed top-down, this line acts as a **default allow**, making the list "deny some, permit the rest".
+
+---
+
+### 🔐 **Extended Access-List 105**
+
+This ACL is similar to 101, but tailored specifically for traffic **originating from 192.168.5.x**.
+
+```bash
+access-list 105 permit udp any eq bootpc any eq bootps
+access-list 105 permit udp any eq bootps any eq bootpc
+```
+
+- Again, allows **DHCP client-server communication** (UDP ports 67 and 68).
+
+```bash
+access-list 105 deny ip 192.168.5.0 0.0.0.255 192.168.1.0 0.0.0.255
+access-list 105 deny ip 192.168.5.0 0.0.0.255 192.168.2.0 0.0.0.255
+access-list 105 deny ip 192.168.5.0 0.0.0.255 192.168.3.0 0.0.0.255
+access-list 105 deny ip 192.168.5.0 0.0.0.255 192.168.4.0 0.0.0.255
+```
+
+- Blocks any IP traffic from the `192.168.5.x` network to all the **other networks** listed (`192.168.1.x` through `192.168.4.x`).
+- This isolates `192.168.5.x` from accessing other internal networks.
+
+```bash
+access-list 105 permit ip 192.168.5.0 0.0.0.255 any
+```
+
+- **Allows** any other traffic from `192.168.5.x` to the outside (e.g., Internet or unlisted destinations).
+- Together with the previous `deny` rules, this creates a **"limited access" policy**: 192.168.5.x can reach the outside but not internal segments.
+
+
+## 🧠 Summary of What’s Happening
+
+| ACL | Purpose |
+|-----|---------|
+| `access-list 1` | Standard ACL to allow traffic from a large internal network range (`192.168.0.0/16`). |
+| `access-list 101` | Extended ACL allowing DHCP traffic, **blocking internal segment `192.168.x.x` to 192.168.1.x**, and permitting everything else. |
+| `access-list 105` | More restrictive; **denies 192.168.5.x** access to all other internal networks, allows only DHCP and general outbound traffic. |
+
+These ACLs likely support a **segmented network** where:
+- DHCP is permitted network-wide.
+- `192.168.1.x` is a protected or core network.
+- `192.168.5.x` is a more restricted or guest network.
+- Other networks have partial access based on their role.
